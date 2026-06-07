@@ -6,19 +6,19 @@ Designed for platform engineers, SREs, DevOps engineers, and senior developers, 
 
 ### Prerequisites:
 You will get the most value if you already:
-🔹Understand basic container and Kubernetes concepts (pods, Deployments, Services).
-🔹Are comfortable with the terminal, Git, and YAML.
+- Understand basic container and Kubernetes concepts (pods, Deployments, Services).
+- Are comfortable with the terminal, Git, and YAML.
 No prior OpenShift experience is required,we start from first principles and quickly move into real‑world patterns used on production clusters
 
 💡What you’ll learn:
 By the end of the series you’ll be able to:
-🔹Explain what OpenShift adds on top of Kubernetes and why enterprises choose it.
-🔹Install and manage a lab cluster, then deploy and expose real containerized applications.
-🔹Make apps production‑shaped with persistent storage, health probes, autoscaling, and safe rollouts.
-🔹Integrate OpenShift with enterprise identity providers, design multi‑tenant project layouts, and enforce Security Context Constraints.
-🔹Understand how OpenShift networking really works: pod networks, Services, DNS, Routes, Ingress, and NetworkPolicies.
-🔹Secure workloads and the platform itself with OpenShift’s built‑in security model and take advantage of OperatorHub to automate complex platforms and services.
-🔹Implement an end‑to‑end GitOps‑driven CI/CD pipeline using GitLab CI and Argo CD for a realistic 3‑tier application.
+- Explain what OpenShift adds on top of Kubernetes and why enterprises choose it.
+- Install and manage a lab cluster, then deploy and expose real containerized applications.
+- Make apps production‑shaped with persistent storage, health probes, autoscaling, and safe rollouts.
+- Integrate OpenShift with enterprise identity providers, design multi‑tenant project layouts, and enforce Security Context Constraints.
+- Understand how OpenShift networking really works: pod networks, Services, DNS, Routes, Ingress, and NetworkPolicies.
+- Secure workloads and the platform itself with OpenShift’s built‑in security model and take advantage of OperatorHub to automate complex platforms and services.
+- Implement an end‑to‑end GitOps‑driven CI/CD pipeline using GitLab CI and Argo CD for a realistic 3‑tier application.
 
 ### Module breakdown:
 🔹From Kubernetes to OpenShift: What Changes and Why Enterprises Care
