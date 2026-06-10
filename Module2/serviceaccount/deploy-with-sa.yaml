@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sa-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sa-demo
+  template:
+    metadata:
+      labels:
+        app: sa-demo
+    spec:
+      serviceAccountName: app-sa
+      containers:
+        - name: client
+          image: registry.redhat.io/openshift4/ose-cli:latest
+          command: ["/bin/bash", "-c"]
+          args:
+            - >
+              echo "Trying to list pods...";
+              oc get pods || echo "No permission or oc not installed";
+              sleep 3600
