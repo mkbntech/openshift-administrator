@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: memory-hog
+spec:
+  containers:
+  - name: app
+    image: nginxinc/nginx-unprivileged
+    resources:
+      requests:
+        memory: "4Gi"
+        cpu: "500m"
+      limits:
+        memory: "4Gi"
+        cpu: "1"

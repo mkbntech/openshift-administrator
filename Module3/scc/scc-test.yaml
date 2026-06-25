@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: privileged-test
+spec:
+  serviceAccountName: default
+  containers:
+  - name: test
+    image: registry.access.redhat.com/ubi9/ubi-minimal
+    command:
+    - sleep
+    - "3600"
+    securityContext:
+      privileged: true

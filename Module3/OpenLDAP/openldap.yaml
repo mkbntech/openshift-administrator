@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ds389
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ds389
+  template:
+    metadata:
+      labels:
+        app: ds389
+    spec:
+      containers:
+      - name: ds389
+        image: quay.io/389ds/dirsrv:latest
+        ports:
+        - containerPort: 3389
+        env:
+        - name: DS_SUFFIX
+          value: dc=acme,dc=com
+        - name: DS_DM_PASSWORD
+          value: RedHat123!
+        volumeMounts:
+        - mountPath: /data
+          name: dsdata
+      volumes:
+      - name: dsdata
+        emptyDir: {}
+
+

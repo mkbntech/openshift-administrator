@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: team-a-quota
+spec:
+  hard:
+    requests.cpu: "4"
+    limits.cpu: "8"
+    requests.memory: "8Gi"
+    limits.memory: "16Gi"
+    pods: "30"
+    persistentvolumeclaims: "10"
+    services: "20"
+    count/routes.route.openshift.io: "20"
